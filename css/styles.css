@@ -1,0 +1,142 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    background-color: #f7f7f7 !important;
+    color: #402039;
+}
+
+.content {
+    flex: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #294C60;
+    flex-shrink: 0;
+    border-radius: .1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.footer p {
+    color: #f7f7f7;
+    margin: auto;
+    text-align: center;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.text-box {
+    display: inline;
+    padding: 1em;
+}
+
+.content p {
+    white-space: pre-line;
+}
+
+.intro-photo {
+    border-style: solid;
+    border-radius: .25em;
+    border-color: #294C60;
+}
+
+.intro-photo img {
+    width: 50%;
+}
+
+.intro {
+    padding-top: 1em;;
+    display: inline-block;
+    margin: auto;
+}
+
+.heading-style {
+    width: 100%;
+    display: inline;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.video {
+    width: 100%;
+    padding-bottom: 3em;
+}
+
+.button {
+    vertical-align: middle;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #294C60;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+    width: 300px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* Mobile Styles */
+
+@media only screen and (max-width: 650px) {}
+
+/* Tablet Styles */
+
+@media only screen and (min-width: 651px) and (max-width: 960px) {}
+
+/* Desktop Styles */
+
+@media only screen and (min-width: 961px) {
+    .intro, .intro-photo {
+        width: 50%;
+    }
+}
