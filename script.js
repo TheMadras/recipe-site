@@ -38,7 +38,7 @@ function updateRecipe(json) {
   while (hasIngredients) {
     ingrName = "strIngredient" + num.toString();
     ingrAmount = "strMeasure" + num.toString();
-    if (json["meals"][0][ingrName] === "" || num > 20) {
+    if (json["meals"][0][ingrName] === "" || num > 20 || json["meals"][0][ingrName] === null) {
       hasIngredients = false;
       break;
     }
